@@ -8,13 +8,15 @@ Each tool is simple, lightweight, and solves one specific problem.
 ## 📂 Tools Included
 
 * **Animation** - show animation till a task is in progress
+* **AutoDoc** - generate documenation, description for a function
 * **Command** - run given command on terminal and show output match with pattern
-* **Unit Convert** – convert length from one to another
-* **Stack** - stack data structure implemented using class
+* **Convert** – convert length from one to another
 * **Equation** - solve quadratic equation
 * **Getch** - input implemented, using builtin modules
-* **Get IP** – get and display ip address
+* **GetIP** – get and display ip address
+* **Humanize** - format seconds, bytes, and wind directions into human-readable text.
 * **Queue** - queue data structure implemented using class
+* **Stack** - stack data structure implemented using class
 * **Watcher** – watch python and run program when file changes
 * More coming soon...
 
