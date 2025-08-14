@@ -1,15 +1,6 @@
 class QueueEmptyError(Exception):
     pass
 
-
-class StackEmptyError(Exception):
-    pass
-
-
-class NotFoundError(Exception):
-    pass
-
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -75,30 +66,3 @@ class Queue:
                 lastNode = node
                 node = node.next
         return False
-
-
-class ListQueue:
-    def __init__(self):
-        self.__list = []
-        self.size = 0
-        self.readIndex = 0
-
-    def enqueue(self, data):
-        self.size += 1
-        self.__list.append(data)
-
-    def dequeue(self):
-        if self.__list:
-            self.size -= 1
-            return self.__list.pop(0)
-
-        raise QueueEmptyError("Queue is empty")
-
-    def peek(self):
-        if self.__list:
-            return self.__list[0]
-
-        raise QueueEmptyError("Queue is empty")
-
-
-# /home/prem/Python/Program/queue_1.py
