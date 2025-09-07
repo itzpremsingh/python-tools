@@ -7,18 +7,17 @@ Each tool is simple, lightweight, and solves one specific problem.
 
 ## 📂 Tools Included
 
-* **Animation** - show animation till a task is in progress
-* **AutoDoc** - generate documenation, description for a function
-* **Command** - run given command on terminal and show output match with pattern
-* **Convert** – convert length from one to another
-* **Equation** - solve quadratic equation
-* **Getch** - input implemented, using builtin modules
-* **GetIP** – get and display ip address
-* **Humanize** - format seconds, bytes, and wind directions into human-readable text.
-* **Queue** - queue data structure implemented using class
-* **Stack** - stack data structure implemented using class
-* **Watcher** – watch python and run program when file changes
-* More coming soon...
+- **Animation** - show animation till a task is in progress
+- **AutoDoc** - generate documenation, description for a function
+- **Command** - run given command on terminal and show output match with pattern
+- **Convert** – convert length from one to another
+- **Equation** - solve quadratic equation
+- **Getch** - input implemented, using builtin modules
+- **Humanize** - format seconds, bytes, and wind directions into human-readable text.
+- **Password** - encrypt and decrypt password
+- **Structure** - implement data structures like stack and queue
+- **Watcher** – watch python and run program when file changes
+- More coming soon...
 
 ---
 
@@ -31,7 +30,7 @@ Each tool is simple, lightweight, and solves one specific problem.
    cd python-tools
    ```
 
-3. Run the script:
+2. Run the script:
 
    ```bash
    python3 animation.py
