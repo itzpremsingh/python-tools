@@ -1,6 +1,3 @@
-from typing import Optional
-
-
 def time_format(sec, _format=0, _sort=0, _round=2):
     hours = 0
     minute = 0
@@ -35,8 +32,9 @@ def size_format(byte, _round=1):
     mb = 1048576
     gb = 1073741824
     tb = 1099511627776
-    size: Optional[float] = None
+    size = 0
     byte = int(byte)
+
     if byte < kb:
         return byte, "B"
 

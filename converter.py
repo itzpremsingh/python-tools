@@ -77,11 +77,6 @@ value = {
     (7, 6): 1760,
 }
 
-
-def _convert(_from, to, number):
-    return value.get((_from, to), "") * number
-
-
 if __name__ == "__main__":
     index = 1
     for unit in units:
@@ -101,5 +96,5 @@ if __name__ == "__main__":
 
     unitRange = range(len(units))
     if unit in unitRange and convert in unitRange:
-        converted = integer(number * value.get((unit, convert)))
+        converted = integer(number * value[(unit, convert)])
         print(f"{number} {units[unit]} = {converted} {units[convert]}")

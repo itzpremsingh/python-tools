@@ -1,7 +1,5 @@
 from math import sqrt
 
-a, b, c = 39, 49, 39
-
 
 class Equation:
     def __init__(self, a, b, c, v="x") -> None:
@@ -51,5 +49,9 @@ class Equation:
         return root1, root2
 
 
-equation = Equation(a, b, c)
-print(equation)
+if __name__ == "__main__":
+    a, b, c = 39, 49, 39
+    print(f"{a}x² + {b}x + {c} = 0")
+
+    equation = Equation(a, b, c)
+    print(equation)

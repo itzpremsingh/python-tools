@@ -1,7 +1,8 @@
 from inspect import getfullargspec, isclass
 from io import StringIO
 
-def inspectFunction(__func__):
+
+def inspectFunction(__func__) -> dict:
     """
     Extract details about a function.
 
@@ -39,7 +40,7 @@ def inspectFunction(__func__):
 
     allData["annotation"] = fullargs.annotations
     return allData
-    
+
 
 def buildDoc(__func__: object, read: bool = False) -> str:
     """
@@ -76,7 +77,7 @@ def buildDoc(__func__: object, read: bool = False) -> str:
             extra = f" Default is {default!r}."
 
         write(
-            f'   {args} ({__type}): {" __summary__." if not read else f"parameter {index}."}{extra}\n'
+            f"   {args} ({__type}): {' __summary__.' if not read else f'parameter {index}.'}{extra}\n"
         )
 
         index += 1
@@ -87,13 +88,15 @@ def buildDoc(__func__: object, read: bool = False) -> str:
         if isclass(returnType):
             returnType = returnType.__name__
 
-        write(f'\nReturns: {returnType if read else ""}')
+        write(f"\nReturns: {returnType if read else ''}")
         if not read:
             write(f"\n   {returnType}: __summary__.")
 
     return __doc__.getvalue()
 
+
 if __name__ == "__main__":
+
     def testFunc(a: int, b: str = "Hi") -> str:
         return b * a
 
