@@ -9,8 +9,6 @@ def levenshtein(word1: str, word2: str) -> int:
 
     for i in range(1, len(word1) + 1):
         for j in range(1, len(word2) + 1):
-            levens = 0
-
             if word1[i - 1] != word2[j - 1]:
                 levens = (
                     min(
