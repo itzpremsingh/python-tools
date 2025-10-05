@@ -14,7 +14,7 @@ Each tool is simple, lightweight, and solves one specific problem.
 - **Equation** - solve quadratic equation
 - **Getch** - input implemented, using builtin modules
 - **Humanize** - format seconds, bytes, and wind directions into human-readable text
-- **Levenshtein** - match two words using Levenshtein algorithm
+- **Levenshtein** - calculate levenshtein distance
 - **Password** - encrypt and decrypt password
 - **Structure** - implement data structures like stack and queue
 - **Watcher** – watch python and run program when file changes
