@@ -32,5 +32,5 @@ def levenshtein(word1: str, word2: str) -> int:
 
 
 if __name__ == "__main__":
-    print(levenshtein("kitten", "sitting"))  # Output: 3
-    print(levenshtein("flaw", "lawn"))  # Output: 2
+    print(levenshtein("kitten", "sitting"))
+    print(levenshtein("flaw", "lawn"))
